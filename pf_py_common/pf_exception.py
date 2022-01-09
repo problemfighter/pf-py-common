@@ -1,12 +1,12 @@
 class PFException(Exception):
-    message_type: str = None
+    exception_type: str = None
     message = None
     additional_info: dict = None
     code: str = None
 
-    def __init__(self, message=None, message_type: str = None):
+    def __init__(self, message=None, exception_type: str = None):
         super().__init__(message)
-        self.message_type = message_type
+        self.exception_type = exception_type
         self.message = message
 
     def other_info(self, additional_info: dict = None, code: str = None):
