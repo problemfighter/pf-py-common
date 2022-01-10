@@ -6,12 +6,6 @@ Problem Fighter Python Common (PF-PY-Common) Library is build for various common
 as a Helper libraries.
 
 
-* Install PF PY Common
-```bash
-pip install -U PF-PY-Common
-```
-
-
 <br/><br/><br/>
 ## Documentation
 Install and update using [pip](https://pip.pypa.io/en/stable/getting-started/):
