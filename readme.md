@@ -10,10 +10,10 @@ as a Helper libraries.
 ## Documentation
 Install and update using [pip](https://pip.pypa.io/en/stable/getting-started/):
 ```bash
-pip install -U xxxx
+pip install -U PF-PY-Common
 ```
 
-**Please find [the Documentation]() with example from [hmtmcse.com]()**
+**Please find [the Documentation](https://www.hmtmcse.com/pf/pf-py-common/bismillah) with example from [hmtmcse.com](https://www.hmtmcse.com/pf/pf-py-common/bismillah)**
 
 
 <br/><br/><br/>
