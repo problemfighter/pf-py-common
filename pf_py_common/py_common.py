@@ -12,6 +12,8 @@ class PyCommon:
 
     @staticmethod
     def import_from_string(import_name: str, silent: bool = False):
+        if not import_name:
+            return None
         import_name = import_name.replace(":", ".")
         try:
             try:
