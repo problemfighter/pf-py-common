@@ -11,6 +11,13 @@ class PyCommon:
         return unique_id.upper()
 
     @staticmethod
+    def get_random(length=12) -> str:
+        unique_id = PyCommon.uuid()
+        unique_id = unique_id.replace("-", "")
+        unique_id = unique_id[:length]
+        return unique_id.lower()
+
+    @staticmethod
     def import_from_string(import_name: str, silent: bool = False):
         if not import_name:
             return None
