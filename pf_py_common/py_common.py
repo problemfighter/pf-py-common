@@ -34,7 +34,8 @@ class PyCommon:
             module_name, obj_name = import_name.rsplit(".", 1)
             module = __import__(module_name, globals(), locals(), [obj_name])
             try:
-                return getattr(module, obj_name)
+                if hasattr(module, obj_name):
+                    return getattr(module, obj_name)
             except AttributeError as e:
                 raise ImportError(e)
 
