@@ -19,7 +19,7 @@ def get_dependencies():
 
 setup(
     name='PF-PY-Common',
-    version='1.0.1',
+    version='1.0.2',
     url='https://github.com/problemfighter/pf-py-common',
     license='Apache 2.0',
     author='Problem Fighter',
