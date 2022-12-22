@@ -1,3 +1,4 @@
+import random
 import sys
 import uuid
 from pf_py_common.pf_exception import PFException
@@ -16,6 +17,11 @@ class PyCommon:
         unique_id = unique_id.replace("-", "")
         unique_id = unique_id[:length]
         return unique_id.lower()
+
+    @staticmethod
+    def get_random_6digit():
+        random_number = random.randint(0, 999999)
+        return "{:06d}".format(random_number)
 
     @staticmethod
     def import_from_string(import_name: str, silent: bool = False):
