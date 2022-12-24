@@ -24,3 +24,4 @@ class PFException(Exception):
 
     def add_data(self, data: any):
         self.data = data
+        return self
