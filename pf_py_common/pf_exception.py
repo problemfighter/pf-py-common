@@ -3,6 +3,7 @@ class PFException(Exception):
     message = None
     additional_info: dict = None
     code: str = None
+    data: any = None
 
     def __init__(self, message=None, exception_type: str = None):
         super().__init__(message)
@@ -20,3 +21,6 @@ class PFException(Exception):
         if key:
             self.additional_info[key] = value
         return self
+
+    def add_data(self, data: any):
+        self.data = data
